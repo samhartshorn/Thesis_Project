@@ -1,0 +1,17 @@
+{
+  "name": "Thesis Extension",
+  "version": "1.0.0",
+  "description": "This is an extension to scrutinize our usage",
+  "manifest_version": 3,
+  "permissions":["activeTab","declarativeContent","storage","tabs", "scripting", "declarativeNetRequest"],
+  "host_permissions": ["<all_urls>"],
+  "author": "Sam Hartshorn",
+  "action": {
+      "default_popup": "popup.html",
+      "default_title": "Scrutability Extension"
+  },
+  "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    }
+  }
